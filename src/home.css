@@ -1,0 +1,180 @@
+.home-container {
+  margin-top: 50px;
+  display: flex;
+}
+.image-container {
+  width: fit-content;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.banner {
+  width: 500px;
+  height: 500px;
+  animation-name: slideright;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slideright {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(25deg);
+  }
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: aliceblue;
+}
+.home-content-heading {
+  color: white;
+}
+.home-content-para {
+  color: aliceblue;
+  animation: slideleft linear;
+  animation-timeline: view();
+}
+.home-content-button {
+  display: flex;
+  width: 100%;
+  color: #a0a0a0;
+  cursor: pointer;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.home-content-button h3 {
+  background-color: purple;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+}
+@keyframes slideleft {
+  from {
+    transform: translateX(300px);
+  }
+}
+.container {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  height: 320px;
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+}
+.moon {
+  background-color: purple;
+  height: 170px;
+  width: 170px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+}
+.crater {
+  background-color: purple;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+.crater::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  box-shadow: -5px 0 0 3px rgb(113, 25, 113);
+  top: 2px;
+  left: 7px;
+}
+.carter1 {
+  top: 27px;
+  left: 90px;
+  transform: scale(0.9);
+}
+.carter2 {
+  bottom: 15px;
+  left: 61px;
+  transform: scale(0.6);
+}
+.carter3 {
+  left: 15px;
+  transform: scale(0.75);
+}
+.carter4 {
+  top: 32px;
+  left: 107px;
+  transform: scale(1.02);
+}
+.carter5 {
+  left: 33px;
+  bottom: 4px;
+  transform: scale(0.65);
+}
+.shadow {
+  height: 190px;
+  width: 190px;
+  box-shadow: 21px 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  position: relative;
+  bottom: 157px;
+  right: 45px;
+}
+.orbit {
+  height: 280px;
+  width: 280px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  animation: spin 5s infinite linear;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rocket {
+  background-color: rgb(124, 120, 120);
+  height: 50px;
+  width: 25px;
+  position: relative;
+  border-radius: 50% 50% 0 0;
+  top: 115px;
+  left: -11px;
+}
+.rocket::before {
+  position: absolute;
+  content: "";
+  background: purple;
+  height: 20px;
+  width: 55px;
+  z-index: -1;
+  border-radius: 50% 50% 0 0;
+  right: -15px;
+  bottom: 0;
+}
+.rocket::after {
+  position: absolute;
+  content: "";
+  background-color: purple;
+  height: 4px;
+
+  width: 15px;
+  border-radius: 0 0 2px 2px;
+  bottom: -4px;
+  left: 4.3px;
+}
