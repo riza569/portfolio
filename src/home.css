@@ -4,27 +4,16 @@
 }
 .image-container {
   width: fit-content;
-  margin-bottom: 50px;
   display: flex;
 }
 
 .banner {
   width: 500px;
   height: 500px;
-  animation-name: slideright;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  opacity: 0.85;
+  animation: fadeinfromTop 0.5s linear forwards, floating ease 4s infinite;
 }
-@keyframes slideright {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(25deg);
-  }
-}
+
 .home-content {
   display: flex;
   flex-direction: column;
@@ -68,6 +57,7 @@
   overflow: hidden;
 }
 .moon {
+  position: absolute;
   background-color: purple;
   height: 170px;
   width: 170px;
@@ -77,7 +67,6 @@
   right: 0;
   margin: auto;
   border-radius: 50%;
-  position: absolute;
   overflow: hidden;
 }
 .crater {
@@ -148,7 +137,7 @@
   }
 }
 .rocket {
-  background-color: rgb(124, 120, 120);
+  background-color: rgb(255, 255, 255);
   height: 50px;
   width: 25px;
   position: relative;
@@ -177,4 +166,14 @@
   border-radius: 0 0 2px 2px;
   bottom: -4px;
   left: 4.3px;
+}
+@keyframes home-scientist_animation {
+  25% {
+    opacity: 1;
+  }
+  85%,
+  100% {
+    opacity: 0;
+    scale: 3;
+  }
 }
