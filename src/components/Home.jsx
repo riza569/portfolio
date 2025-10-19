@@ -1,20 +1,22 @@
-import banner from "../assets/header-img.svg";
-import "../home.css";
+import banner from '../assets/header-img.svg';
+import '../home.css';
+
 const Home = () => {
   return (
-    <div className="home-container">
-      <div className="image-container">
-        <img className="banner" src={banner} />
-      </div>
+    <div id="home" className="home-container">
       <div className="home-content">
-        <h1 className="home-content-heading">HELLO IAM RIZA</h1>
-        <p className="home-content-para">Self taught front end developer</p>
-
+        <h1 className="home-content-heading">HELLO I'M RIZA</h1>
+        <p className="home-content-para">Self-taught Front End Developer</p>
         <div className="home-content-button">
-          <h3>CV</h3>
-          <h3>Hire me</h3>
+          <h3>Download CV</h3>
+          <h3>Hire Me</h3>
         </div>
       </div>
+
+      <div className="image-container">
+        <img className="banner" src={banner} alt="Developer illustration" />
+      </div>
+
       <div className="container">
         <div className="moon">
           <div className="crater carter1"></div>

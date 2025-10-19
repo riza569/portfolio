@@ -1,8 +1,9 @@
-import "../skills.css";
-import { Skillcard } from "./Skillcard";
+import '../skills.css';
+import { Skillcard } from './Skillcard';
+
 const Skills = () => {
   return (
-    <section className="Skilss-full-container">
+    <section id="skills" className="Skilss-full-container">
       <div className="skills-container">
         <div className="skills-content">
           <h3 className="skills-content_heading">SKILLS</h3>
@@ -12,10 +13,10 @@ const Skills = () => {
       <div className="grid-container">
         <Skillcard title="CSS" percentage={90} />
         <Skillcard title="HTML" percentage={90} />
-        <Skillcard title="JQuery" percentage={90} />
-        <Skillcard title="React" percentage={90} />
         <Skillcard title="JavaScript" percentage={85} />
-        <Skillcard title="Figma" percentage={90} />
+        <Skillcard title="React" percentage={90} />
+        <Skillcard title="jQuery" percentage={80} />
+        <Skillcard title="Figma" percentage={85} />
       </div>
     </section>
   );

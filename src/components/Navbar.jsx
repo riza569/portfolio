@@ -1,7 +1,15 @@
-import { useState } from "react";
-import logo from "../assets/mylogo.svg";
+import { useState } from 'react';
+
 const Navbar = () => {
-  const [list, setList] = useState(["Home", "Skills", "Projects", "Contact"]);
+  const [list] = useState(['Home', 'Skills', 'Projects', 'Contact']);
+
+  const scrollToSection = (section) => {
+    const element = document.getElementById(section.toLowerCase());
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <header className="navbar-container">
       <div className="scroll-watcher"></div>
@@ -10,7 +18,11 @@ const Navbar = () => {
       </div>
       <nav className="link-container">
         {list.map((li) => (
-          <span key={li.length} className="active">
+          <span
+            key={li}
+            className="active"
+            onClick={() => scrollToSection(li)}
+          >
             {li}
           </span>
         ))}
