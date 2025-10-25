@@ -19,7 +19,7 @@ const Contact = () => {
               <div className="contact-icon">📧</div>
               <div className="contact-method-info">
                 <h4>Email</h4>
-                <p>riza@example.com</p>
+                <p>rizamuhammed569@example.com</p>
               </div>
             </div>
 
@@ -27,7 +27,7 @@ const Contact = () => {
               <div className="contact-icon">📱</div>
               <div className="contact-method-info">
                 <h4>Phone</h4>
-                <p>+1 234 567 890</p>
+                <p>+91 9567176870</p>
               </div>
             </div>
 
@@ -41,18 +41,16 @@ const Contact = () => {
           </div>
 
           <div className="social-links">
-            <a href="#" className="social-link" aria-label="GitHub">
+            <a href="https://github.com/riza569/" className="social-link" aria-label="GitHub">
               💻
             </a>
-            <a href="#" className="social-link" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/muhammed-riza-3a882526a/" className="social-link" aria-label="LinkedIn">
               💼
             </a>
             <a href="#" className="social-link" aria-label="Twitter">
               🐦
             </a>
-            <a href="#" className="social-link" aria-label="Instagram">
-              📷
-            </a>
+         
           </div>
         </div>
 
