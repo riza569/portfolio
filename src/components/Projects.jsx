@@ -11,10 +11,10 @@ const Projects = () => {
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
-      title: 'Coming Soon',
+      title: 'Care Management System',
       description: 'Exciting new project in development. Stay tuned for more updates!',
-      tech: ['React', 'Node.js'],
-      link: '#',
+      tech: ['React', 'Django'],
+      link: 'https://github.com/riza569/care_nexus/',
       image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
