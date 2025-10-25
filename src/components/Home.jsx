@@ -8,7 +8,12 @@ const Home = () => {
         <h1 className="home-content-heading">HELLO I'M RIZA</h1>
         <p className="home-content-para">Self-taught Front End Developer</p>
         <div className="home-content-button">
-          <h3>Download CV</h3>
+         
+          <a href="/Riza-res.pdf" download="Riza-res.pdf">
+            <h3>Download CV</h3>
+          </a>
+        
+
           <h3>Hire Me</h3>
         </div>
       </div>
@@ -30,6 +35,7 @@ const Home = () => {
           <div className="rocket"></div>
         </div>
       </div>
+
     </div>
   );
 };
