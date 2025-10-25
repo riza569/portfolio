@@ -61,7 +61,10 @@
   background-clip: text;
   margin: 0;
 }
-
+.home-content-button a {
+  text-decoration: none; 
+  color: inherit;       
+}
 .home-content-para {
   font-size: 1.3rem;
   color: #a0a0a0;
