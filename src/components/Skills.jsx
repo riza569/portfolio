@@ -11,12 +11,12 @@ const Skills = () => {
         </div>
       </div>
       <div className="grid-container">
-        <Skillcard title="CSS" percentage={90} />
+        <Skillcard title="Django" percentage={75} />
         <Skillcard title="HTML" percentage={90} />
-        <Skillcard title="JavaScript" percentage={85} />
+        <Skillcard title="JavaScript" percentage={80} />
         <Skillcard title="React" percentage={90} />
-        <Skillcard title="jQuery" percentage={80} />
-        <Skillcard title="Figma" percentage={85} />
+        <Skillcard title="Sql" percentage={90} />
+        <Skillcard title="Pandas" percentage={85} />
       </div>
     </section>
   );
